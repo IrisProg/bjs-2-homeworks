@@ -14,7 +14,7 @@ function getUsersNamesInAgeRange(users, gender) {
       if (users.length <= 0) {
         return 0;
       } else {
-        result = people.filter(e => e.gender === gender).map(ages => ages.age).reduce(findeAve, 0);
+        result = users.filter(e => e.gender === gender).map(ages => ages.age).reduce(findeAve, 0);
       }  
       return result;
   
